@@ -1,5 +1,5 @@
 body {
-	background: #333 url(tactile_noise.png);
+	background: #222 url(images/tactile_noise.png);
 	font-family: "Helvetica Nueu", Helvetica, Arial, sans-serif;
 	color: #ccc;
 	margin: 0;
@@ -40,7 +40,9 @@ header p {
 
 
 #links {
-	margin: 50px auto;
+	margin: 0 auto;
+	padding: 50px 0;
+	text-align: center;
 }
 #links li {
 	display: inline-block;
@@ -59,10 +61,7 @@ footer {
 	padding: 1em 0;
 	text-align: center;
 }
-footer cite {
-	color: #555;
-	text-shadow: 0 -1px 0 rgba(0,0,0,.8);
-}
+
 
 .top-border {
 	border-top: 1px solid #333;
