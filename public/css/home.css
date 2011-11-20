@@ -1,73 +1,159 @@
 body {
-	background: #222 url(images/tactile_noise.png);
+	background: #222 url(/images/tactile_noise.png);
 	font-family: "Helvetica Nueu", Helvetica, Arial, sans-serif;
-	color: #ccc;
-	margin: 0;
+	color: #eee;
 }
-ul {
-	list-style-type: none;
-}
-a {
-	color: #fff;
+a, a:link, a:visited {
+	color: #eee;
 	text-decoration: none;
+	-moz-transition-property: color;
+	-moz-transition-duration: 2s;
+  	-moz-transition-timing-function: ease-out;
 }
 a:hover {
-	text-decoration: underline;
+	color: #fff;
 }
 
-#wrapper {
-	width: 500px;
-	margin: 0 auto;
+#moodband {
+	width: 100%;
+	height: 5px;
+	background: url(/images/mood-tiles.png) repeat-x;
 }
 
 header {
-	padding: 50px 0;
+	padding: 75px 10px;
 	text-align: center;
+	background-color: #e3ffe3;
+	background: -moz-linear-gradient(top, #f2faff 0%, #e3ffe3 100%);
+	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#f2faff), color-stop(100%,#e3ffe3));
+	background: -webkit-linear-gradient(top, #f2faff 0%,#e3ffe3 100%);
+	background: -o-linear-gradient(top, #f2faff 0%,#e3ffe3 100%);
+	background: -ms-linear-gradient(top, #f2faff 0%,#e3ffe3 100%);
+	background: linear-gradient(top, #f2faff 0%,#e3ffe3 100%);
+	color: #333;
+	text-shadow: 0 1px 1px rgba(0,0,50,.25);
+	box-shadow: inset 0 -2px 5px rgba(50,50,100,.3);
 }
 header h1 {
-	font-family: "museo-slab-1", "museo-slab-2", sans-serif;
-	font-size: 48px;
+	margin-bottom: 10px;
+	font-size: 60px;
+	font-weight: 700;
+	font-family: georgia,serif;
+	
+}
+
+#content {
+	width: 525px;
+	margin: 0 auto;
+}
+
+section {
+	padding: 60px 0;
+}
+
+section h2 {
+	margin-bottom: 15px;
+	text-align: center;
+	font-family: georgia,serif;
 	font-weight: 500;
-	color: #aaa;
-	text-shadow: 0 1px 0 #ccc, -1px -1px 0 #000;
-	margin: 0 0 15px;
-}
-header p {
-	width: 500px;
-	margin: 0 auto;
 	font-size: 16px;
+	color: #aaa;
 }
 
 
-#links {
+#sites ul {
+	width: 400px;
 	margin: 0 auto;
-	padding: 50px 0;
+}
+#sites li {
+	float: left;
+	width: 10em;
+	margin-bottom: 10px;
+}
+#sites li:nth-child(odd) {
+	margin-right: 5em;
+}
+#sites a {
+	display: block;
+	font-size: 24px;
+	font-weight: bold;
+	line-height: 36px;
+	text-shadow: 2px 2px 5px rgba(0,0,0,.5);
+	vertical-align: middle;
+	padding-left: 40px;
+	background-position: 0 5px;
+	background-repeat: no-repeat;
+}
+#sites a:hover {
+	text-shadow: 0 0 3px rgba(100,100,100,.8);
+	background-position: 0 -45px;
+}
+#sites .twitter {
+	background-image: url(/images/icons/twitter.png);
+}
+#sites .tumblr {
+	background-image: url(/images/icons/tumblr.png);
+}
+#sites .github {
+	background-image: url(/images/icons/github.png);
+}
+#sites .linkedin {
+	background-image: url(/images/icons/linkedin.png);
+}
+#sites .facebook {
+	background-image: url(/images/icons/facebook.png);
+}
+
+#work {
 	text-align: center;
 }
-#links li {
+#work li {
 	display: inline-block;
+	vertical-align: middle;
+	margin-right: 30px;
 }
-#links a {
-	display: inline-block;
-	margin: 10px 20px;
-	font-size: 20px;
-	font-weight: bold;
-	text-shadow: 2px 2px 5px rgba(0,0,0,.5);
+#work li:last-child {
+	margin-right: 0;
+}
+#work li img {
+	display: block;
+}
+#work a {
+	display: block;
+	opacity: 0.8;
+}
+#work a:hover {
+	opacity: 1;
 }
 
 
 footer {
 	margin: 0 auto;
-	padding: 1em 0;
-	text-align: center;
+	width: 485px;
+	padding: 20px;
+	color: #aaa;
+	font-size: 12px;
+	text-shadow: 0 -1px 0 #000;
 }
-
+footer .email {
+	float: left;
+	padding-left: 28px;
+	background: url(/images/icons/email.png) no-repeat 0 1px;
+	color: #aaa;
+}
+footer .email:hover {
+	background-position: 0 -49px;
+}
+footer .copyright {
+	float: right;
+	font-style: normal;
+}
 
 .top-border {
-	border-top: 1px solid #333;
-	box-shadow: 0 -1px 0 rgba(0,0,0,.3);
+	border-top: 1px solid #2d2d2d;
+	box-shadow: 0 -1px 0 rgba(0,0,0,.4);
 }
 .bottom-border {
-	border-bottom: 1px solid #333;
-	box-shadow: inset 0 -1px 0 rgba(0,0,0,.3);	
+	border-bottom: 1px solid #2d2d2d;
+	box-shadow: inset 0 -1px 0 rgba(0,0,0,.4);
 }
