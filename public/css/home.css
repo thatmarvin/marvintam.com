@@ -1,6 +1,6 @@
 body {
-	background: #222 url(/images/tactile_noise.png);
-	font-family: "Helvetica Nueu", Helvetica, Arial, sans-serif;
+	background: #111 url(/images/black_denim.png);
+	font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
 }
 
 a, a:link, a:visited {
@@ -38,8 +38,6 @@ header h1 {
 	margin-bottom: 10px;
 	font-size: 60px;
 	font-weight: 700;
-	font-family: georgia,serif;
-	
 }
 
 #content {
@@ -55,7 +53,6 @@ section {
 section h2 {
 	margin-bottom: 15px;
 	text-align: center;
-	font-family: georgia,serif;
 	font-weight: 500;
 	font-size: 16px;
 	color: #aaa;
@@ -63,12 +60,12 @@ section h2 {
 
 
 #sites ul {
-	width: 400px;
+	width: 370px;
 	margin: 0 auto;
 }
 #sites li {
 	float: left;
-	width: 10em;
+	width: 9em;
 	margin-bottom: 10px;
 }
 #sites li:nth-child(odd) {
@@ -139,7 +136,7 @@ footer {
 footer .email {
 	float: left;
 	padding-left: 28px;
-	background: url(/images/icons/email.png) no-repeat 0 1px;
+	background: url(/images/icons/email.png) no-repeat 0 2px;
 	color: #aaa;
 }
 footer .email:hover {
