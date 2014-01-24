@@ -1,0 +1,66 @@
+doctype html
+html(lang='en')
+  head
+    meta(charset='UTF-8')
+    meta(
+      name='viewport'
+      content='width=device-width, initial-scale=1.0, maximum-scale=1.0'
+    )
+    title Hello! I’m Marvin.
+    link(rel='stylesheet', href='/dist/css/home.css', media='screen')
+    include components/typekit
+
+  body.container
+    .row
+      .col-xs-12.col-sm-8.col-md-7.col-sm-offset-2
+        header
+          h1.tk-museo-slab Hello! I’m Marvin.
+          :markdown
+            I craft awesome web products in the amazing New York City.
+            <span class="icon icon-heart" title='I ❤ NY'></span>
+
+            In the past, I’ve worked at Yahoo!, The New York Times and
+            Jetsetter in various capacities as a software engineer. At the
+            moment, I’m working on a little event planning startup called
+            [Fiestah](http://www.fiestah.com/).
+
+        section
+          p You can find me on:
+          ul.social.list-unstyled
+            li
+              a(href='http://www.facebook.com/marvintam', title='Facebook')
+                span.icon.icon-facebook
+                | 
+                span.text Facebook
+            li
+              a(href='http://twitter.com/thatmarvin', title='Twitter')
+                span.icon.icon-twitter
+                | 
+                span.text Twitter
+            li
+              a(href='http://instagram.com/thatmarvin', title='Instagram')
+                span.icon.icon-instagram
+                | 
+                span.text Instagram
+            li
+              a(href='https://github.com/thatmarvin', title='GitHub')
+                span.icon.icon-github
+                | 
+                span.text GitHub
+            li
+              a(href='http://www.linkedin.com/in/marvintam', title='LinkedIn')
+                span.icon.icon-linkedin
+                | 
+                span.text LinkedIn
+            li
+              a(href='http://thatmarvin.tumblr.com', title='Tumblr')
+                span.icon.icon-tumblr
+                | 
+                span.text Tumblr
+            li
+              a(href='mailto:marvintam+site@gmail.com', title='Email')
+                span.icon.icon-envelope
+                | 
+                span.text Email
+
+    include components/ga

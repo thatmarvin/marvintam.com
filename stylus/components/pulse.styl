@@ -1,0 +1,26 @@
+// "Pulse" animation from http://daneden.github.io/animate.css/
+@keyframes pulse
+  0%
+    scale(1)
+
+  50%
+    scale(1.1)
+
+  100%
+    scale(1)
+
+
+// This is +15deg rotation for the heart
+transform(ratio)
+  -webkit-transform: s('rotate(%s)', 15deg) s('scale(%s)', ratio)
+  transform: s('rotate(%s)', 15deg) s('scale(%s)', ratio)
+
+@keyframes rotatedPulse
+  0%
+    transform(1)
+
+  50%
+    transform(1.2)
+
+  100%
+    transform(1)
