@@ -1,5 +1,5 @@
 $body-bg          = #f9f9f9
-$text-color       = #423501
+$text-color       = #55534C
 $link-color       = #4374B9
 $link-hover-color = $link-color
 
@@ -25,27 +25,36 @@ $container-lg-desktop = $container-desktop
 
 
 .tk-museo-slab
+  color: #423501
   text-shadow: 0 1px 1px rgba(0,0,0,.15)
 
 header
-  padding: 30px 0
+  margin: 50px 0 42px
+
+
+.intro
+  p
+    line-height: 1.6
+  a
+    font-weight: bold
 
   .icon-heart
+    $anim = heartBeat 1s linear
+
     display: inline-block
     font-size: 125%
     color: #EF4136
     rotate(15deg)
+    -webkit-animation: $anim 1s 3
+    animation: $anim 1s 3
     &:hover
-      -webkit-animation: rotatedPulse .8s
-      animation: rotatedPulse .8s
-      -webkit-animation-iteration-count: 3
-      animation-iteration-count: 3
-
-a
-  font-weight: bold
+      -webkit-animation: $anim .2s 1
+      animation: $anim .2s 1
 
 
 .social
+  margin-top: 50px
+
   li
     display: inline-block
   a
@@ -72,7 +81,7 @@ a
   header h1
     font-size: 48px
   p
-    font-size: 16px
+    font-size: 18px
 
 
 @media $media-min-desktop
