@@ -39,18 +39,11 @@ header
     font-weight: bold
 
   .icon-heart
-    $anim = heartBeat 1s linear
-
     display: inline-block
-    font-size: 125%
+    font-size: 150%
     color: #EF4136
     rotate(15deg)
-    -webkit-animation: $anim 1s 3
-    animation: $anim 1s 3
-    &:hover
-      -webkit-animation: $anim .2s 1
-      animation: $anim .2s 1
-
+    animation: heartBeat 1.5s 1.5s 5
 
 .social
   margin-top: 30px
