@@ -16,27 +16,7 @@ module.exports = function (grunt) {
       }
     },
 
-    jade: {
-      options: {
-
-      },
-      templates: {
-        files: [{
-          expand: true,
-          cwd: 'views',
-          src: [ '*.jade' ],
-          dest: 'public',
-          ext: '.html'
-        }]
-      }
-    },
-
     watch: {
-      jade: {
-        files: ['views/*.jade'],
-        tasks: ['jade']
-      },
-
       stylus: {
         files: ['stylus/*.styl'],
         tasks: ['stylus']
@@ -58,10 +38,7 @@ module.exports = function (grunt) {
 
   grunt.loadNpmTasks('grunt-contrib-watch');
   grunt.loadNpmTasks('grunt-contrib-stylus');
-  grunt.loadNpmTasks('grunt-contrib-jade');
   grunt.loadNpmTasks('grunt-contrib-clean');
 
-
-  grunt.registerTask('build', ['stylus', 'jade']);
-
+  grunt.registerTask('build', ['stylus']);
 };

@@ -2,4 +2,3 @@
 .monitor
 node_modules
 public/dist
-public/*.html
