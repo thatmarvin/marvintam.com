@@ -90,5 +90,14 @@
         </section>
       </div>
     </div>
+    <script>
+      const heartEl = document.querySelector(".icon-heart");
+      function restartAnim() {
+        heartEl.style.animation = "none";
+        heartEl.offsetHeight;
+        heartEl.style.animation = null;
+      }
+      heartEl.addEventListener("mouseenter", restartAnim);
+    </script>
   </body>
 </html>
